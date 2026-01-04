@@ -1,0 +1,19 @@
+# run: conda env create -n <name> --file environment.yml
+
+# conda env create -n openai-vision --file Environment.yml
+# conda activate openai-vision
+# cleanup:
+#     conda env remove -n openai-vision
+# setup as kernel:
+#     python -m ipykernel install --user --name openai-vision 
+#         --display-name "Python (OpenAI)"
+name: openai-vision
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - openai
+  - Pillow
+  - jupyter
+  - ipykernel
+  - load_dotenv
